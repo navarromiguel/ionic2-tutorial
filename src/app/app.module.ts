@@ -4,8 +4,6 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AddItemPage } from '../pages/add-item/add-item';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
-import { Storage } from '@ionic/storage';
-import { Data } from '../providers/data';
  
 @NgModule({
   declarations: [
@@ -24,6 +22,6 @@ import { Data } from '../providers/data';
     AddItemPage,
     ItemDetailPage
   ],
-  providers: [Storage, Data]
+  providers: []
 })
 export class AppModule {}

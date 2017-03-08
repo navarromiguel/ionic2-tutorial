@@ -54,5 +54,10 @@ export class HomePage {
       item: item
     });
   }
+
+  removeItem(item) {
+    this.items.splice(this.items.findIndex(el => { return el.value == item; }), 1);
+    this.dataService.save(this.items);
+  }
  
 }

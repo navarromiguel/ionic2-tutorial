@@ -40,9 +40,7 @@ export class HomePage {
   }
  
   viewItem(item){
- 	this.navCtrl.push(ItemDetailPage, {
-      item: item
-    });
+ 	
   }
  
 }

@@ -2,13 +2,11 @@ import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { AddItemPage } from '../pages/add-item/add-item';
  
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    AddItemPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -17,7 +15,6 @@ import { AddItemPage } from '../pages/add-item/add-item';
   entryComponents: [
     MyApp,
     HomePage,
-    AddItemPage,
   ],
   providers: []
 })

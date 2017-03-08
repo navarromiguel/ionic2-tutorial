@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { ModalController, NavController } from 'ionic-angular';
-import { AddItemPage } from '../add-item/add-item'
-import { ItemDetailPage } from '../item-detail/item-detail';
 
 @Component({
   selector: 'page-home',
@@ -21,22 +19,6 @@ export class HomePage {
  
   addItem(){
  
-    let addModal = this.modalCtrl.create(AddItemPage);
- 
-    addModal.onDidDismiss((item) => {
- 
-          if(item){
-            this.saveItem(item);
-          }
- 
-    });
- 
-    addModal.present();
- 
-  }
- 
-  saveItem(item){
-    this.items.push(item);
   }
  
   viewItem(item){
